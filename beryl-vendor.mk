@@ -133,9 +133,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_config_gl.json \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/dof_mecp/dof_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_mecp/dof_mecp.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f16M_w50M_i.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f16M_w50M_i.bin \
+    vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f16M_w50M_i_ITS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f16M_w50M_i_ITS.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f16M_w50M_ii.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f16M_w50M_ii.bin \
+    vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f16M_w50M_ii_ITS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f16M_w50M_ii_ITS.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f20M_w108M_u8M_i.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f20M_w108M_u8M_i.bin \
+    vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f20M_w108M_u8M_i_ITS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f20M_w108M_u8M_i_ITS.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f20M_w108M_u8M_ii.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f20M_w108M_u8M_ii.bin \
+    vendor/xiaomi/beryl/proprietary/vendor/etc/camera/eis/O17_f20M_w108M_u8M_ii_ITS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eis/O17_f20M_w108M_u8M_ii_ITS.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/golden/dualcamGolden_108M+8M_1/dualcam_cali_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden/dualcamGolden_108M+8M_1/dualcam_cali_golden.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/golden/dualcamGolden_108M+8M_2/dualcam_cali_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden/dualcamGolden_108M+8M_2/dualcam_cali_golden.bin \
     vendor/xiaomi/beryl/proprietary/vendor/etc/camera/golden/dualcamGolden_50M+2M_1/dualcam_cali_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden/dualcamGolden_50M+2M_1/dualcam_cali_golden.bin \
@@ -644,8 +648,6 @@ PRODUCT_PACKAGES += \
     libmtk_drvb \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -2586,6 +2588,7 @@ PRODUCT_PACKAGES += \
     sc820cs_ofilm_ultra_ii_mipi_raw_india_tuning \
     sc820cs_ofilm_ultra_ii_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
+    sensors.touch.detect \
     libdlbvol \
     libmisoundfx \
     libswdap \
