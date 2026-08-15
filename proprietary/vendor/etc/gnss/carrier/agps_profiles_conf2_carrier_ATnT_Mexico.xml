@@ -9,6 +9,9 @@
       addr="supl.attmex.mx"
       port="7275"
       tls="true"
+      supl_version="2"
+      tls_version="1"
+      sha_version="0"
   />
 
   <cdma_profile name="CDMA1"

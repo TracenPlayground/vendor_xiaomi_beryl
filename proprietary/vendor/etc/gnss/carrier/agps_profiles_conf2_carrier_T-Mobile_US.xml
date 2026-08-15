@@ -23,6 +23,7 @@
 
   <cp_setting
     reject_non911_nilr_enable="true"
+    cp_gvc_enable="true"
     cp_lppe_civic_enable="false"
   />
 

@@ -10,6 +10,7 @@
 
   <up_setting
     imsi_enable="true"
+    ut_connection="20"
     cert_from_sdcard="true"
   />
 

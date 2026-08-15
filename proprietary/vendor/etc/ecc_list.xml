@@ -298,17 +298,17 @@
     <EccEntry Ecc="118" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 FFF"/>
-    
+
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="466 11"/>
     <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 11"/>
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 11"/>
     <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 11"/>
-    <EccEntry Ecc="118" Category="0" Condition="1" Plmn="466 11"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 11"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="466 92"/>
     <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 92"/>
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 92"/>
     <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 92"/>
-    <EccEntry Ecc="118" Category="0" Condition="1" Plmn="466 92"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 92"/>
 
     <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 01"/>
     <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 01"/>
@@ -457,6 +457,8 @@
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="502 FFF"/>
     <EccEntry Ecc="999" Category="1" Condition="1" Plmn="502 153"/>
     <EccEntry Ecc="112" Category="1" Condition="1" Plmn="502 153"/>
+    <EccEntry Ecc="991" Category="0" Condition="3" Plmn="502 19"/>
+    <EccEntry Ecc="994" Category="0" Condition="3" Plmn="502 19"/>
 
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="310 FFF"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="310 FFF"/>
@@ -532,6 +534,8 @@
     <!-- Add for Oman operator -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="422 FFF"/>
     <EccEntry Ecc="9999" Category="0" Condition="2" Plmn="422 FFF"/>
+
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="426 01"/>
 
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="712 FFF"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="712 FFF"/>
@@ -678,20 +682,12 @@
 
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="714 03"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="714 03"/>
-    <EccEntry Ecc="103" Category="0" Condition="1" Plmn="714 03"/>
-    <EccEntry Ecc="104" Category="0" Condition="1" Plmn="714 03"/>
-    <EccEntry Ecc="109" Category="0" Condition="1" Plmn="714 03"/>
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="714 01"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="714 01"/>
-    <EccEntry Ecc="103" Category="0" Condition="1" Plmn="714 01"/>
-    <EccEntry Ecc="104" Category="0" Condition="1" Plmn="714 01"/>
-    <EccEntry Ecc="109" Category="0" Condition="1" Plmn="714 01"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="714 020"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="714 020"/>
-    <EccEntry Ecc="103" Category="0" Condition="1" Plmn="714 020"/>
-    <EccEntry Ecc="104" Category="0" Condition="1" Plmn="714 020"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="714 02"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="714 02"/>
-    <EccEntry Ecc="103" Category="0" Condition="1" Plmn="714 02"/>
-    <EccEntry Ecc="104" Category="0" Condition="1" Plmn="714 02"/>
 
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="748 07"/>
 
@@ -781,9 +777,10 @@
     <EccEntry Ecc="1122" Category="0" Condition="2" Plmn = "410 FFF"/>
 
     <!--add for Morocco -->
-    <EccEntry Ecc="15" Category="0" Condition="2" Plmn="604 FFF"/>
-    <EccEntry Ecc="19" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="15" Category="2" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="19" Category="1" Condition="2" Plmn="604 FFF"/>
     <EccEntry Ecc="177" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="150" Category="4" Condition="2" Plmn="604 FFF"/>
 
     <!-- Add for Nigeria -->
     <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 20"/>

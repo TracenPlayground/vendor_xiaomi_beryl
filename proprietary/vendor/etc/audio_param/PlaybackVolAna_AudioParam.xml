@@ -23,9 +23,8 @@
     <Param path="Notification,HS5POLE_ANC" param_id="4"/>
     <Param path="Notification,USB" param_id="3"/>
     <Param path="Default,Others,SPK" param_id="5"/>
-    <Param path="Default,Others,HS" param_id="6"/>
-    <Param path="Default,Ring_Alarm,SPK" param_id="7"/>
-    <Param path="Default,Notification,SPK" param_id="8"/>
+    <Param path="Default,Ring_Alarm,SPK" param_id="6"/>
+    <Param path="Default,Notification,SPK" param_id="7"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
@@ -65,18 +64,12 @@
       <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
     </ParamUnit>
     <ParamUnit param_id="6">
-      <Param name="headset_pga" value="9"/>
-      <Param name="speaker_pga" value="-1"/>
-      <Param name="receiver_pga" value="-1"/>
-      <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="7">
       <Param name="headset_pga" value="-1"/>
       <Param name="speaker_pga" value="8"/>
       <Param name="receiver_pga" value="-1"/>
       <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
     </ParamUnit>
-    <ParamUnit param_id="8">
+    <ParamUnit param_id="7">
       <Param name="headset_pga" value="-1"/>
       <Param name="speaker_pga" value="8"/>
       <Param name="receiver_pga" value="-1"/>

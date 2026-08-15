@@ -63,7 +63,7 @@
 				<Category name="4" wording="Level4"/>
 				<Category name="5" wording="Level5"/>
 				<Category name="6" wording="Level6"/>
-				<Category name="7" wording="Level7"/>
+                                <Category name="7" wording="Level7"/>
 				<Category name="8" wording="Level8"/>
 				<Category name="9" wording="Level9"/>
 				<Category name="10" wording="Level10"/>
@@ -99,5 +99,6 @@
 		<Param name="DV visibility" type="int"/>
 		<Param name="UL Gain Set" type="int"/>
 		<Param name="UL Gain Name" type="string_array"/>
+		<Param name="GainBoost visibility" type="int"/>
 	</ParamUnit>
 </ParamUnitDesc>
