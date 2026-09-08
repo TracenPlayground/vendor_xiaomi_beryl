@@ -188,7 +188,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libstagefright_foundation",
                 "liblog",
@@ -554,7 +554,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -37147,7 +37147,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -37208,7 +37208,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -37797,6 +37797,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcrypto-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcrypto-v36.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcustom_nvram",
     owner: "xiaomi",
     strip: {
@@ -38077,7 +38100,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -38085,7 +38108,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -39004,48 +39027,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmifpext",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmifpext.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "libbase",
-                "libvndksupport",
-                "libbinder",
-                "libbinder_ndk",
-                "libstagefright_foundation",
-                "android.hardware.biometrics.fingerprint-V4-ndk",
-                "android.hardware.biometrics.common-V4-ndk",
-                "android.hardware.biometrics.common.thread",
-                "android.hardware.biometrics.common.util",
-                "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
-                "vendor.xiaomi.hw.touchfeature-V1-ndk",
-                "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V3-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libminiui",
     owner: "xiaomi",
     strip: {
@@ -39416,38 +39397,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libmt_mitee.so",
             ],
-            shared_libs: [
-                "vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk",
-                "libcrypto",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "vendor.xiaomi.hardware.mlipay-V1-ndk",
-                "vendor.xiaomi.hardware.mfidoca-V1-ndk",
-                "libteecli",
-                "libmlipay_mitee",
-                "libmfido_mitee",
-                "libxml2",
-                "libwvkeybox",
-                "liboemcrypto",
-                "libhardware",
-                "libkeymaster4support",
-                "lib_android_keymaster_keymint_utils",
-                "libkeymint",
-                "libkeymaster_messages",
-                "libkeymint_support",
-                "android.hardware.security.keymint-V4-ndk",
-                "libkeymint_remote_prov_support",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -41886,7 +41839,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libssl-v36.so",
             ],
             shared_libs: [
-                "libcrypto",
+                "libcrypto-v36",
                 "libc",
                 "libm",
                 "libdl",
@@ -48122,7 +48075,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_mtk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -48130,7 +48083,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/mt6855/libmnl.so",
+                "proprietary/vendor/lib64/mt6855/libmnl_mtk.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -54041,7 +53994,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -57437,7 +57390,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -57551,7 +57504,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libandroid_net",
-                "libcrypto",
+                "libcrypto-v36",
                 "libexpat",
                 "libssl-v36",
                 "libc++",
@@ -58927,10 +58880,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libmnl_so",
+    name: "vendor_lib64_libmnl_mtk_so",
     soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6855/libmnl.so",
+    installed_location: "lib64/libmnl_mtk.so",
+    symlink_target: "/vendor/lib64/mt6855/libmnl_mtk.so",
 }
 
 install_symlink {
