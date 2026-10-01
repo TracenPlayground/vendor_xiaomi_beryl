@@ -56255,6 +56255,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.xiaomi.hw.touchfeature-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.sensor.citsensorservice.aidl.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml",
@@ -57219,6 +57228,40 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "vendor.mediatek.hardware.pq_aidl-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hw.touchfeature-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.xiaomi.hw.touchfeature-service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libbase",
+                "liblog",
+                "libbinder_ndk",
+                "vendor.xiaomi.hw.touchfeature-V1-ndk",
+                "android.frameworks.sensorservice-V1-ndk",
+                "android.hardware.sensors-V3-ndk",
+                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
